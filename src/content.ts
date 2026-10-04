@@ -25,7 +25,7 @@ export const SITE: Site = {
     weight: 400,
     upper: false,
   },
-  scene: "imarti",
+  scene: "pour",
   align: "right",
   hero: {
     title: [
@@ -90,9 +90,35 @@ export const SITE: Site = {
     address: { en: "ITI Colony, Sohna bypass, Sohna", hi: "ITI कॉलोनी, सोहना बाईपास, सोहना" },
     note: { en: "Open from 7am till midnight, every day.", hi: "हर दिन सुबह 7 बजे से रात 12 बजे तक।" },
   },
+  pour: { from: "pan", into: "kulhad", liquid: "#efdcb4", foam: "#fff3d6", thick: 2.6 },
+  story: [
+    { kicker: { en: "The rabri", hi: "रबड़ी" }, title: { en: "Thick, slow, sweet.", hi: "गाढ़ी, धीमी, मीठी।" }, quote: "Liked Namak Pare, Mithai and Rabri. The staff is humble and well behaved." },
+    { kicker: { en: "The counter", hi: "काउंटर" }, title: { en: "Imarti first, samosa next.", hi: "पहले इमरती, फिर समोसा।" }, quote: "Emarti is really good. And samosa also." },
+    { kicker: { en: "The party", hi: "पार्टी" }, title: { en: "Ordered again for Diwali.", hi: "दिवाली के लिए फिर से ऑर्डर।" }, quote: "I ordered Samosa again for Diwali party from these guys and everyone loved it." },
+  ],
+  build: {
+    title: { en: "Build your order in a few taps", hi: "कुछ टैप में अपना ऑर्डर बनाइए" },
+    body: { en: "Tap the dishes guests rave about, set how many and when. It goes to WhatsApp exactly as you see it.", hi: "मेहमानों की पसंदीदा डिश टैप करें, कितने लोग और कब, चुनें। मैसेज व्हाट्सऐप पर ठीक ऐसे ही जाएगा।" },
+    pick: { label: { en: "Order", hi: "ऑर्डर" }, options: [
+      { name: { en: "Visit", hi: "आकर खाना" } },
+      { name: { en: "Party order", hi: "पार्टी ऑर्डर" }, note: { en: "Like the Diwali samosas", hi: "दिवाली के समोसों की तरह" } },
+    ] },
+    items: [
+      { en: "Imarti", hi: "इमरती" },
+      { en: "Samosa", hi: "समोसा" },
+      { en: "Ghewar", hi: "घेवर" },
+      { en: "Rabri", hi: "रबड़ी" },
+      { en: "Namak Pare", hi: "नमक पारे" },
+      { en: "Dal Fry Butter", hi: "दाल फ़्राई बटर" },
+      { en: "Banjara Paneer", hi: "बंजारा पनीर" },
+    ],
+    people: true,
+    when: true,
+    hello: { en: "Hi Bali Sweets, I'd like:", hi: "नमस्ते बाली स्वीट्स, मुझे चाहिए:" },
+  },
   waHello: {
     en: "Hi Bali Sweet & Restaurant, I'd like to place an order. Items: , quantity: , pickup date: ",
     hi: "नमस्ते बाली स्वीट एंड रेस्टोरेंट, मुझे ऑर्डर देना है। आइटम: , मात्रा: , पिकअप की तारीख़: ",
   },
-  order: ["feature", "dishes", "gallery", "reviews", "visit"],
+  order: ["build", "feature", "dishes", "gallery", "reviews", "visit"],
 };
